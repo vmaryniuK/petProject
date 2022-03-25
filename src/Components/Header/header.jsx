@@ -1,16 +1,23 @@
 import React from "react";
-import Headerpicture from "./headerpicture/headerpicture";
-import Headertitle from "./headertitle/headertitle";
+import { Link } from "react-router-dom";
 import "./header.scss"
 
-export default function Header(){
+const Header = () => {
     return (
         <div className="header">
-             <Headerpicture/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Qneq-FDsHb6pE4K2bflk7bapK0NINBV3dw&usqp=CAU" alt="logo" />
              <div className="headtitle">
-                 <Headertitle/>
+                <ul>
+                    <li>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li>
+                        <Link to='/favorite'>Favorites</Link>
+                    </li>
+                </ul>
              </div>
-        </div>
-             
+        </div>        
     )
-}
+};
+
+export default Header;
