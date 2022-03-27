@@ -10,6 +10,7 @@ import {
 import Home from './Components/pages/Home';
 import Favourite from './Components/pages/Favorites';
 import Notfound from './Components/pages/Notfound';
+import Cards from './Components/pages/Cards';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favorite" element={<Favourite />} />
+           <Route path="/card" element={<Cards />} />
           <Route path='*' element={<Notfound/>}/>
         </Routes>
       </div>
